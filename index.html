@@ -96,11 +96,11 @@
             top: 46%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 24px; /* صغّرنا حجم الخط */
+            font-size: 20px; /* حجم الخط الجديد */
             color: #fff;
             padding: 10px 20px;
             border-radius: 16px;
-            border: 2px solid #fff; /* الحواف بيضاء */
+            border: 1px solid #fff; /* سماكة الحد الأبيض */
             white-space: nowrap;
             z-index: 20;
             text-align: center;
@@ -115,7 +115,7 @@
             }
 
             .name-overlay {
-                font-size: 20px;
+                font-size: 18px;
                 padding: 8px 16px;
             }
         }
@@ -126,7 +126,7 @@
             }
 
             .name-overlay {
-                font-size: 18px;
+                font-size: 16px;
                 padding: 6px 14px;
             }
         }
@@ -135,12 +135,14 @@
 
 <body>
 
+    <!-- لوحة التحكم -->
     <div class="controls">
         <input type="text" id="name" placeholder="ادخل اسمك" />
         <button class="preview-btn" onclick="previewName()">معاينة</button>
         <button class="download-btn" onclick="downloadImage()">تحميل</button>
     </div>
 
+    <!-- البطاقة -->
     <div class="card-container">
         <div class="card" id="card">
             <img id="cardImage" src="https://raw.githubusercontent.com/Laverne5/232/b23ab14c953501555a2d01a930e22bc3209da3c7/EID.jpg" alt="عيد مبارك" crossorigin="anonymous">
@@ -148,6 +150,7 @@
         </div>
     </div>
 
+    <!-- السكربت -->
     <script>
         function previewName() {
             const name = document.getElementById('name').value;
