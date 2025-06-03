@@ -1,3 +1,13 @@
+أكيد! بناءً على طلبك، عدلت كالتالي:
+
+* **أزلت الخلفية** من المربع (`background`).
+* أضفت **حد أبيض** للمربع (`border: 2px solid white`).
+* قللت **حجم الخط** شوي ليكون أنيق.
+* أبقيت على التنسيق الداخلي والحواف الدائرية.
+
+هذا هو الكود المعدل:
+
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -93,14 +103,14 @@
         .name-overlay {
             font-family: 'Cairo', sans-serif;
             position: absolute;
-            top: 35%; /* تقريبًا فوق منتصف الصورة */
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 28px;
+            font-size: 24px; /* صغّرنا حجم الخط */
             color: #fff;
-            background: rgba(0, 0, 0, 0.4); /* خلفية شفافة */
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 16px;
+            border: 2px solid #fff; /* الحواف بيضاء */
             white-space: nowrap;
             z-index: 20;
             text-align: center;
@@ -115,8 +125,8 @@
             }
 
             .name-overlay {
-                font-size: 24px;
-                padding: 10px 20px;
+                font-size: 20px;
+                padding: 8px 16px;
             }
         }
 
@@ -126,8 +136,8 @@
             }
 
             .name-overlay {
-                font-size: 20px;
-                padding: 8px 16px;
+                font-size: 18px;
+                padding: 6px 14px;
             }
         }
     </style>
@@ -135,14 +145,12 @@
 
 <body>
 
-    <!-- لوحة التحكم -->
     <div class="controls">
         <input type="text" id="name" placeholder="ادخل اسمك" />
         <button class="preview-btn" onclick="previewName()">معاينة</button>
         <button class="download-btn" onclick="downloadImage()">تحميل</button>
     </div>
 
-    <!-- البطاقة -->
     <div class="card-container">
         <div class="card" id="card">
             <img id="cardImage" src="https://raw.githubusercontent.com/Laverne5/-/f7a2ed57893acf2fcaa6126e668eb8671a9077ee/بطاقة%20المعايدة.jpg" alt="عيد مبارك" crossorigin="anonymous">
@@ -150,7 +158,6 @@
         </div>
     </div>
 
-    <!-- السكربت -->
     <script>
         function previewName() {
             const name = document.getElementById('name').value;
@@ -180,3 +187,6 @@
 </body>
 
 </html>
+```
+
+هل تحب نجرب نضيف ظل خفيف للنص أو المربع؟ أو تبغى نعدّل موضعه أكثر دقة؟
