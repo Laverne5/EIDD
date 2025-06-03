@@ -74,7 +74,7 @@
         .controls input,
         .controls button {
             font-family: 'Cairo', sans-serif;
-            font-size: 22px;
+            font-size: 20px;
             padding: 12px;
             border: none;
             border-radius: 40px;
@@ -96,40 +96,17 @@
             top: 46%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 20px; /* حجم الخط الجديد */
+            font-size: 20px;
             color: #fff;
             padding: 10px 20px;
             border-radius: 16px;
-            border: 1px solid #fff; /* سماكة الحد الأبيض */
+            border: 1px solid #fff;
             white-space: nowrap;
             z-index: 20;
             text-align: center;
         }
 
-        @media (max-width: 768px) {
-            .controls input,
-            .controls button {
-                font-size: 18px;
-                padding: 8px;
-                min-width: 80px;
-            }
-
-            .name-overlay {
-                font-size: 18px;
-                padding: 8px 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card-container {
-                width: 95%;
-            }
-
-            .name-overlay {
-                font-size: 16px;
-                padding: 6px 14px;
-            }
-        }
+        /* حذف جميع media queries لتوحيد حجم الخط */
     </style>
 </head>
 
